@@ -39,9 +39,9 @@ const NavBarBottom = () => {
                     {
                         navData.map(el => {
                             return (
-                                <div key={el.id} className='flex flex-col items-center gap-1'>
+                                <div key={el.id} className='flex flex-col items-center gap-1 hover:text-[#D62300]'>
                                     {el.icon}
-                                    <Link href={el.link} className="hover:border-b-2 hover:border-b-blue-900 hover:text-[#D62300]">{el.title}</Link>
+                                    <Link to={el.link} className="">{el.title}</Link>
                                 </div>
                             )
                         })
