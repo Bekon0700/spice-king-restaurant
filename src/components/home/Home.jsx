@@ -1,26 +1,12 @@
 import React from "react";
-import NavBarTop from "../navbar_top/NavBarTop";
 
-import { GiHamburger } from "react-icons/gi";
 import HomeCard from "../home_card/HomeCard";
-import Footer from "../footer/Footer";
-import NavBarBottom from "../navbar_bottom/NavBarBottom";
+
 
 const Home = () => {
   return (
     <div>
-      <div className="w-11/12 mx-auto py-4">
-        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
-          <div className="hidden lg:block">
-            <NavBarTop />
-          </div>
-          <GiHamburger className="text-5xl lg:text-6xl text-red-900" />
-          <div className="flex gap-2 text-xl lg:text-2xl font-crimson-text font-bold text-blue-900 underline">
-            <p>Spice King Online Restautant</p>
-          </div>
-        </div>
-      </div>
-      <div className="mt-8 w-full h-[700px] bg-no-repeat bg-cover bg-center "
+      <div className="mt-4 w-full h-[700px] bg-no-repeat bg-cover bg-center "
         style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('./img/veg.jpg')" }}
       >
         <div className="w-3/4 mx-auto h-full flex flex-col gap-4 justify-center items-center text-2xl md:text-3xl lg:text-5xl text-white font-bold uppercase text-center">
@@ -48,13 +34,6 @@ const Home = () => {
           <div className="">
             <img src="./img/class.jpg" alt="" className="w-full h-96 rounded-md hover:ring-2" />
           </div>
-        </div>
-      </div>
-      <Footer />
-
-        <div className="fixed bottom-0 left-0 w-full lg:hidden">
-      <div className="">
-          <NavBarBottom />
         </div>
       </div>
 
