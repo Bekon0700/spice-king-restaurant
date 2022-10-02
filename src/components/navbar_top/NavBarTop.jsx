@@ -35,7 +35,7 @@ const NavBarTop = () => {
                         {
                             navData.map(el => {
                                 return (
-                                    <Link to={el.link} key={el.id} className="hover:border-b-2 hover:border-b-blue-900 hover:text-[#D62300]">{el.title}</Link>
+                                    <Link to={el.link} key={el.id} className="hover:text-[#D62300]">{el.title}</Link>
                                 )
                             })
                         }

@@ -14,7 +14,6 @@ const SpecificFoodList = () => {
         }
         getItemList()
     }, [])
-    console.log(itemList)
     return (
         <div>
             <BackBtn />
@@ -24,7 +23,7 @@ const SpecificFoodList = () => {
                 </div>
                 <div className='flex flex-col gap-2 font-crimson-text text-2xl font-semibold text-black'>
                     {
-                        itemList.map(el => <Link key={el.strArea} className='border border-black px-4 py-2'>{el.strArea}</Link>)
+                        itemList.map(el => <Link key={el.strCategory} className='border border-black px-4 py-2'>{el.strCategory}</Link>)
                     }
                 </div>
             </div>

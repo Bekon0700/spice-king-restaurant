@@ -8,9 +8,9 @@ const BackBtn = () => {
         <div className='absolute ml-4 mt-4'>
             <button
                 onClick={() => { history(-1) }}
-                className='bg-black text-white text-lg font-semibold flex gap-2 justify-center items-center py-2 px-3 rounded-lg'>
+                className='bg-black text-white text-lg lg:text-lg font-semibold flex gap-2 justify-center items-center py-2 px-3 rounded-sm'>
                 <IoMdArrowRoundBack />
-                <p>Go Back</p>
+                <p className='hidden lg:block'>Go Back</p>
             </button>
         </div>
     )
