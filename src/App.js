@@ -1,10 +1,9 @@
 import Home from "./components/home/Home";
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from "react-router-dom";
 
-import Menu from './components/menu/Menu'
-import Offer from './components/offers/Offers'
-import Rewards from './components/rewards/Rewards'
+import Menu from "./components/menu/Menu";
+import Rewards from "./components/rewards/Rewards";
 import NavBarTop from "./components/navbar_top/NavBarTop";
 import Footer from "./components/footer/Footer";
 import NavBarBottom from "./components/navbar_bottom/NavBarBottom";
@@ -15,6 +14,7 @@ import FoodByCountry from "./components/food_by_country/FoodByCountry";
 import FoodByItem from "./components/food_by_item/FoodByItem";
 import FoodCardDetails from "./components/food_card_details/FoodCardDetails";
 import NotFount from "./components/not_found/NotFount";
+import Offers from "./components/offers/Offers";
 
 function App() {
   return (
@@ -22,27 +22,33 @@ function App() {
       <NavBarTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} >
+        <Route path="/home" element={<Home />} />
+
+        <Route path="menu" element={<Menu />}>
           <Route index element={<FoodType />} />
           <Route path="traditional-food">
-            <Route index element={<TraditionalFoodList />} />
-            <Route path=":country" >
+            <Route
+              index
+              element={<TraditionalFoodList />}
+            />
+            <Route path=":country">
               <Route index element={<FoodByCountry />} />
               <Route path=":mealId" element={<FoodCardDetails />} />
             </Route>
-
           </Route>
+
           <Route path="specific-food">
             <Route index element={<SpecificFoodList />} />
-            <Route path=":item" >
+            <Route path=":item">
               <Route index element={<FoodByItem />} />
               <Route path=":mealId" element={<FoodCardDetails />} />
             </Route>
           </Route>
         </Route>
 
+        <Route path="offer" element={<Offers />} />
+        <Route path="reward" element={<Rewards />} />
         <Route path="*" element={<NotFount />} />
-
       </Routes>
       <Footer />
       <NavBarBottom />

@@ -3,32 +3,32 @@ import { AiFillHome } from 'react-icons/ai'
 import { MdFastfood } from 'react-icons/md'
 import { FaCoins, FaWineBottle } from 'react-icons/fa'
 
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const NavBarBottom = () => {
     const navData = [
         {
             id: 1,
             title: 'Home',
-            link: '/',
+            link: 'home',
             icon: <AiFillHome />
         },
         {
             id: 2,
             title: 'Menu',
-            link: '/menu',
+            link: 'menu',
             icon: <MdFastfood />
         },
         {
             id: 3,
             title: 'Offers',
-            link: '/offer',
+            link: 'offer',
             icon: <FaCoins />
         },
         {
             id: 4,
             title: 'Rewards',
-            link: '/reward',
+            link: 'reward',
             icon: <FaWineBottle />
         },
     ]
@@ -41,7 +41,7 @@ const NavBarBottom = () => {
                             return (
                                 <div key={el.id} className='flex flex-col items-center gap-1 hover:text-[#D62300]'>
                                     {el.icon}
-                                    <Link to={el.link} className="">{el.title}</Link>
+                                    <NavLink to={el.link} >{el.title}</NavLink>
                                 </div>
                             )
                         })

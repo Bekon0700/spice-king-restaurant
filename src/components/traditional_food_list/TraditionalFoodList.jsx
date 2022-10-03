@@ -6,6 +6,7 @@ import BackBtn from '../back_btn/BackBtn'
 
 const TraditionalFoodList = () => {
     const [countryList, setCountryList] = useState([])
+
     useEffect(() => {
         const getCountryList = async () => {
             const list = await axios.get('https://www.themealdb.com/api/json/v1/1/list.php?a=list')
