@@ -8,14 +8,14 @@ const FoodType = () => {
                 <div className=" w-full h-96 bg-no-repeat bg-cover bg-center rounded-lg flex justify-center items-center"
                     style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('./img/traditional-food.png')" }}
                 >
-                    <p className='text-4xl italic font-bold text-white '>Prepare traditional food</p>
+                    <p className='text-2xl lg:text-4xl italic font-bold text-white text-center'>Prepare traditional food</p>
                 </div>
             </Link>
             <Link to='/menu/specific-food'>
                 <div className=" w-full h-96 bg-no-repeat bg-cover bg-center rounded-lg flex justify-center items-center"
                     style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('./img/burger.jpg')" }}
                 >
-                    <p className='text-4xl italic font-bold text-white '>Prepare specific item food</p>
+                    <p className='text-2xl lg:text-4xl italic font-bold text-white text-center'>Prepare specific item food</p>
                 </div>
             </Link>
         </div>

@@ -18,12 +18,12 @@ const SpecificFoodList = () => {
         <div>
             <BackBtn />
             <div className='w-4/5 mx-auto py-8'>
-                <div className='text-2xl font-semibold text-center text-red-900 pb-4'>
+                <div className='text-2xl font-semibold text-center text-red-900 pb-4 pt-5 lg:pt-0'>
                     <p>Find specific food by item name</p>
                 </div>
                 <div className='flex flex-col gap-2 font-crimson-text text-2xl font-semibold text-black'>
                     {
-                        itemList.map(el => <Link key={el.strCategory} className='border border-black px-4 py-2'>{el.strCategory}</Link>)
+                        itemList.map(el => <Link key={el.strCategory} to={`/menu/specific-food/${el.strCategory}`} className='border border-black px-4 py-2'>{el.strCategory}</Link>)
                     }
                 </div>
             </div>
