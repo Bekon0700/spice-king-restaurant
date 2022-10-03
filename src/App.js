@@ -14,6 +14,7 @@ import FoodType from "./components/food_type/FoodType";
 import FoodByCountry from "./components/food_by_country/FoodByCountry";
 import FoodByItem from "./components/food_by_item/FoodByItem";
 import FoodCardDetails from "./components/food_card_details/FoodCardDetails";
+import NotFount from "./components/not_found/NotFount";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
           </Route>
         </Route>
 
-
+        <Route path="*" element={<NotFount />} />
 
       </Routes>
       <Footer />
