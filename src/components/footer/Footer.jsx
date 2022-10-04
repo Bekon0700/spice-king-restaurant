@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <footer className="bg-black text-white py-12 pb-24 lg:pb-8">
-                <div className="w-11/12 lg:w-3/4 mx-auto grid grid-cols-2 gap-4">
+                <div className="w-11/12 lg:w-3/4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div className="text-lg font-semibold flex flex-col gap-3 p-4">
                         <p className="text-2xl">This webpage was built for personal practice.</p>
                         <p>Technologies are given below and this webpage is fully responsive.</p>

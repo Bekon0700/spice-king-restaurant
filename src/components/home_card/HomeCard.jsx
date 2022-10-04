@@ -26,7 +26,7 @@ const HomeCard = () => {
             {foodData.map((el) => {
                 return (
                     <div key={el.id} className="rounded-lg bg-white font-crimson-text text-3xl font-bold text-amber-900 flex flex-col gap-3">
-                        <img src={el.img} alt="" className="h-96 rounded-t-lg" />
+                        <img src={el.img} alt="" className=" rounded-t-lg lg:h-96 object-contain lg:object-fill" />
                         <div className="p-5 flex flex-col gap-4 justify-between">
                             <p className="text-center">{el.title}</p>
                             <p className="text-xl font-semibold text-gray-800">
