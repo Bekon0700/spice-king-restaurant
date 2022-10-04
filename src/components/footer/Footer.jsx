@@ -18,8 +18,8 @@ const Footer = () => {
                     <div className="flex flex-col justify-start items-center gap-4">
                         <p className="text-3xl font-semibold text-green-500">Hire me</p>
                         <div className="flex items-center gap-3 text-4xl">
-                            <a href="https://www.linkedin.com/in/emdadul-islam-702906167/" target='_blank'><AiFillLinkedin /></a>
-                            <a href="https://www.facebook.com/Bekon070/" target='_blank'><AiFillFacebook /></a>
+                            <a href="https://www.linkedin.com/in/emdadul-islam-702906167/" target='_blank' rel="noopener noreferrer"><AiFillLinkedin /></a>
+                            <a href="https://www.facebook.com/Bekon070/" target='_blank' rel="noopener noreferrer"><AiFillFacebook /></a>
                         </div>
                     </div>
                 </div>
